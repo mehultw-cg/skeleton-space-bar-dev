@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "portfolio-1",
+      "description": "A sleek dashboard for a fintech startup.",
+      "imageUrl": "https://picsum.photos/seed/p1/600/400",
+      "imageHint": "dashboard analytics"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "E-commerce platform for a fashion brand.",
+      "imageUrl": "https://picsum.photos/seed/p2/600/400",
+      "imageHint": "fashion website"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "Mobile app for a healthcare provider.",
+      "imageUrl": "https://picsum.photos/seed/p3/600/400",
+      "imageHint": "mobile app"
+    },
+    {
+      "id": "portfolio-4",
+      "description": "AI-powered data analysis tool.",
+      "imageUrl": "https://picsum.photos/seed/p4/600/400",
+      "imageHint": "data science"
+    },
+    {
+      "id": "about-us-team",
+      "description": "The ApexDev Foundry team working collaboratively.",
+      "imageUrl": "https://picsum.photos/seed/team/600/450",
+      "imageHint": "team office"
+    }
+  ]
 }
