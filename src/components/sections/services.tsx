@@ -1,48 +1,105 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, CloudCog, CodeXml, ShieldCheck } from 'lucide-react';
+import { Briefcase, LayoutTemplate, CodeXml, Database, Network, ShieldCheck, PenTool, Cloud, UserCheck } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
-const services = [
+const serviceCategories = [
   {
+    category: "Strategy & Design",
     icon: <Briefcase className="h-8 w-8 text-primary" />,
-    title: 'Consulting',
-    description: 'Strategic guidance to align your technology with business goals, ensuring optimal architecture and roadmap.',
+    services: [
+      {
+        icon: <UserCheck className="h-6 w-6 text-primary" />,
+        title: 'Consulting',
+        description: 'Strategic guidance to align technology with your business goals.',
+      },
+      {
+        icon: <LayoutTemplate className="h-6 w-6 text-primary" />,
+        title: 'UI Design',
+        description: 'Creating intuitive and visually appealing user interfaces.',
+      },
+      {
+        icon: <PenTool className="h-6 w-6 text-primary" />,
+        title: 'UX Design',
+        description: 'Crafting seamless and engaging user experiences through research.',
+      },
+    ],
   },
   {
+    category: "Development",
     icon: <CodeXml className="h-8 w-8 text-primary" />,
-    title: 'Development',
-    description: 'End-to-end custom software development, from web and mobile apps to complex enterprise systems.',
+    services: [
+      {
+        icon: <CodeXml className="h-6 w-6 text-primary" />,
+        title: 'Frontend',
+        description: 'Building responsive and performant client-side applications.',
+      },
+      {
+        icon: <Database className="h-6 w-6 text-primary" />,
+        title: 'Backend',
+        description: 'Developing robust and scalable server-side logic and APIs.',
+      },
+      {
+        icon: <Network className="h-6 w-6 text-primary" />,
+        title: 'Database',
+        description: 'Designing and managing efficient and secure data storage solutions.',
+      },
+    ]
   },
   {
-    icon: <CloudCog className="h-8 w-8 text-primary" />,
-    title: 'Deployment',
-    description: 'Efficient and automated deployment pipelines for seamless integration, and reliable infrastructure management.',
-  },
-  {
+    category: "Operations & Security",
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-    title: 'Security',
-    description: 'Comprehensive security audits, penetration testing, and implementation of best practices to protect your assets.',
+    services: [
+      {
+        icon: <Cloud className="h-6 w-6 text-primary" />,
+        title: 'DevOps & SysAdmin',
+        description: 'Automating deployment and managing infrastructure for reliability.',
+      },
+      {
+        icon: <ShieldCheck className="h-6 w-6 text-primary" />,
+        title: 'Security Auditing',
+        description: 'Comprehensive analysis to identify and mitigate security vulnerabilities.',
+      },
+      {
+        icon: <PenTool className="h-6 w-6 text-primary" />,
+        title: 'Penetration Testing',
+        description: 'Simulating cyber-attacks to evaluate and strengthen your security posture.',
+      },
+    ]
   },
 ];
+
 
 export function Services() {
   return (
     <section id="services" className="bg-secondary">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-2">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
+              Our Expertise
+            </span>
+          </h2>
           <p className="max-w-xl mx-auto mt-4 text-muted-foreground">
             We provide a complete suite of services to bring your vision to life.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <Card key={index} className="flex flex-col text-center items-center p-6 border-2 border-transparent hover:border-primary/50 transition-colors duration-300">
-              <CardHeader className="p-0 mb-4">
-                {service.icon}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {serviceCategories.map((category, index) => (
+            <Card key={index} className="glass-card flex flex-col p-6 transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-1">
+              <CardHeader className="flex flex-row items-center gap-4 pb-4">
+                {category.icon}
+                <CardTitle className="text-2xl font-headline">{category.category}</CardTitle>
               </CardHeader>
-              <CardTitle className="mb-2 text-xl font-headline">{service.title}</CardTitle>
-              <CardContent className="p-0 text-muted-foreground">
-                <p>{service.description}</p>
+              <CardContent className="flex-grow space-y-4">
+                {category.services.map((service, sIndex) => (
+                  <div key={sIndex} className="flex items-start gap-3">
+                    <div className="flex-shrink-0">{service.icon}</div>
+                    <div>
+                      <h4 className="font-semibold">{service.title}</h4>
+                      <p className="text-sm text-muted-foreground">{service.description}</p>
+                    </div>
+                  </div>
+                ))}
               </CardContent>
             </Card>
           ))}
