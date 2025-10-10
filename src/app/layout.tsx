@@ -4,8 +4,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ApexDev Foundry',
-  description: 'Expert Software Consulting and Development',
+  title: 'StellarDev Solutions',
+  description: 'Expert Software Consulting for the Final Frontier',
 };
 
 export default function RootLayout({

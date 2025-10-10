@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
+    --background: 228 9% 10%; /* Deep space blue */
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 8%;
+    --card: 230 10% 15%; /* Darker card background */
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 228 9% 10%;
     --popover-foreground: 210 40% 98%;
-    --primary: 310 90% 65%;
+    --primary: 258 90% 68%; /* Nebula purple */
     --primary-foreground: 210 40% 98%;
-    --primary-gradient-from: 310 90% 65%;
-    --primary-gradient-to: 260 100% 70%;
-    --secondary: 217.2 32.6% 17.5%;
+    --primary-gradient-from: 258 90% 68%;
+    --primary-gradient-to: 198 90% 65%; /* Starlight cyan */
+    --secondary: 228 9% 17%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 228 9% 25%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 170 80% 50%;
+    --accent: 198 90% 65%; /* Starlight cyan */
     --accent-foreground: 222.2 47.4% 11.2%;
-    --accent-gradient-from: 170 80% 50%;
-    --accent-gradient-to: 200 100% 60%;
+    --accent-gradient-from: 198 90% 65%;
+    --accent-gradient-to: 180 90% 70%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 22.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 228 9% 30%;
+    --input: 228 9% 17%;
+    --ring: 258 90% 75%;
     --radius: 0.75rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -42,18 +42,18 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 310 90% 60%;
+    --primary: 258 85% 60%;
     --primary-foreground: 210 40% 98%;
-    --primary-gradient-from: 310 90% 60%;
-    --primary-gradient-to: 260 100% 65%;
+    --primary-gradient-from: 258 85% 60%;
+    --primary-gradient-to: 198 85% 55%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 170 80% 45%;
+    --accent: 198 85% 45%;
     --accent-foreground: 210 40% 98%;
-    --accent-gradient-from: 170 80% 45%;
-    --accent-gradient-to: 200 100% 55%;
+    --accent-gradient-from: 198 85% 45%;
+    --accent-gradient-to: 180 85% 55%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;

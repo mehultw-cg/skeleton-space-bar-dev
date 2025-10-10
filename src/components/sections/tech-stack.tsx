@@ -1,11 +1,11 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Database, Globe, Shield, Brush } from 'lucide-react';
+import { Code, Database, Globe, Shield, Brush, Rocket, Satellite } from 'lucide-react';
 
 const techCategories = [
   {
     category: 'Frontend',
-    icon: <Globe className="h-6 w-6 text-primary" />,
+    icon: <Rocket className="h-6 w-6 text-primary" />,
     techs: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
@@ -20,7 +20,7 @@ const techCategories = [
   },
   {
     category: 'DevOps & Cloud',
-    icon: <Globe className="h-6 w-6 text-primary" />,
+    icon: <Satellite className="h-6 w-6 text-primary" />,
     techs: ['Docker', 'Kubernetes', 'AWS', 'Google Cloud', 'Vercel', 'Terraform'],
   },
   {
@@ -43,11 +43,11 @@ export function TechStack() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
-              Modern Technology, Solid Foundations
+              Modern Tech, Cosmic Power
             </span>
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-muted-foreground">
-            We leverage a cutting-edge, battle-tested tech stack to build high-performance, secure, and scalable applications.
+            We leverage a cutting-edge, battle-tested tech stack to build high-performance, secure, and scalable applications that reach for the stars.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

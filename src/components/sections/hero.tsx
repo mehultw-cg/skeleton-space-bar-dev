@@ -14,24 +14,24 @@ export function Hero() {
       </div>
       <div className="container relative text-center py-24 md:py-32">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter mb-4">
-          Crafting Tomorrow's
+          Launching Tomorrow's
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
             {' '}
-            Digital Solutions
+            Digital Experiences
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-8">
-          ApexDev Foundry is your strategic partner in building robust, scalable, and secure software solutions that drive business growth.
+          StellarDev Solutions is your strategic partner in building robust, scalable, and secure software solutions that propel your business to the stars.
         </p>
         <div className="flex justify-center gap-4">
           <Button size="lg" asChild className="bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to text-primary-foreground hover:opacity-90 transition-opacity">
             <Link href="#contact">
-              Start Your Project
+              Start Your Mission
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="#portfolio">View Our Work</Link>
+            <Link href="#portfolio">View Our Constellation</Link>
           </Button>
         </div>
       </div>

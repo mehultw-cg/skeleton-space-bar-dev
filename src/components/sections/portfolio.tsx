@@ -13,11 +13,11 @@ export function Portfolio() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
-              Our Proven Track Record
+              Our Constellation of Projects
             </span>
           </h2>
           <p className="max-w-xl mx-auto mt-4 text-muted-foreground">
-            Explore a selection of our successful projects and see our expertise in action.
+            Explore a selection of our successful missions and see our expertise in action.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -36,12 +36,12 @@ export function Portfolio() {
                 </div>
               </CardHeader>
               <CardContent className="p-6">
-                <CardTitle className="font-headline text-2xl mb-2">{`Project ${index + 1}`}</CardTitle>
+                <CardTitle className="font-headline text-2xl mb-2">{`Project Star-Hopper ${index + 1}`}</CardTitle>
                 <p className="text-muted-foreground">{project.description}</p>
               </CardContent>
               <CardFooter className="p-6 pt-0">
                  <Button variant="link" className="p-0 h-auto text-primary hover:text-primary/80 transition-colors">
-                    View Case Study <ArrowUpRight className="ml-1 h-4 w-4" />
+                    View Mission Debrief <ArrowUpRight className="ml-1 h-4 w-4" />
                 </Button>
               </CardFooter>
             </Card>
