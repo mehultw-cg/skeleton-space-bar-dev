@@ -52,12 +52,12 @@ export function Contact() {
     <section id="contact">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Let's Chart a Course</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">Let's Build Together</h2>
           <p className="max-w-xl mx-auto mt-4 text-muted-foreground">
-            Have a mission in mind? We'd love to hear about it.
+            Have a project in mind? We'd love to hear about it.
           </p>
         </div>
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto glass-card p-8 rounded-lg">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <FormField

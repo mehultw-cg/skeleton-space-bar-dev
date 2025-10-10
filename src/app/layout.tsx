@@ -4,8 +4,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'StellarDev Solutions',
-  description: 'Expert Software Consulting for the Final Frontier',
+  title: 'Space Bar Labs',
+  description: 'Precision. Performance. Possibility.',
 };
 
 export default function RootLayout({

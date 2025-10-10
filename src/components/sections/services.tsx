@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, LayoutTemplate, CodeXml, Database, Network, ShieldCheck, PenTool, Cloud, UserCheck } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Briefcase, LayoutTemplate, CodeXml, Database, Network, ShieldCheck, PenTool, Cloud, UserCheck, CloudCog, ShieldAlert, TestTube } from 'lucide-react';
 
 const serviceCategories = [
   {
@@ -30,44 +29,43 @@ const serviceCategories = [
     services: [
       {
         icon: <CodeXml className="h-6 w-6 text-primary" />,
-        title: 'Frontend',
+        title: 'Frontend Development',
         description: 'Building responsive and performant client-side applications.',
       },
       {
         icon: <Database className="h-6 w-6 text-primary" />,
-        title: 'Backend',
+        title: 'Backend Development',
         description: 'Developing robust and scalable server-side logic and APIs.',
       },
-      {
-        icon: <Network className="h-6 w-6 text-primary" />,
-        title: 'Database',
-        description: 'Designing and managing efficient and secure data storage solutions.',
-      },
-    ]
-  },
-  {
-    category: "Operations & Security",
-    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-    services: [
       {
         icon: <Cloud className="h-6 w-6 text-primary" />,
         title: 'DevOps & SysAdmin',
         description: 'Automating deployment and managing infrastructure for reliability.',
       },
+    ]
+  },
+  {
+    category: "Security & Operations",
+    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
+    services: [
       {
-        icon: <ShieldCheck className="h-6 w-6 text-primary" />,
+        icon: <ShieldAlert className="h-6 w-6 text-primary" />,
         title: 'Security Auditing',
         description: 'Comprehensive analysis to identify and mitigate security vulnerabilities.',
       },
       {
-        icon: <PenTool className="h-6 w-6 text-primary" />,
-        title: 'Penetration Testing',
+        icon: <CloudCog className="h-6 w-6 text-primary" />,
+        title: 'Cloud Security',
+        description: 'Securing cloud infrastructure and services against threats.',
+      },
+      {
+        icon: <TestTube className="h-6 w-6 text-primary" />,
+        title: 'Web Penetration Testing',
         description: 'Simulating cyber-attacks to evaluate and strengthen your security posture.',
       },
     ]
   },
 ];
-
 
 export function Services() {
   return (
@@ -76,11 +74,11 @@ export function Services() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline mb-2">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
-              Our Expertise
+              Our Capabilities
             </span>
           </h2>
           <p className="max-w-xl mx-auto mt-4 text-muted-foreground">
-            We provide a complete suite of services to bring your vision to life.
+            We provide a complete suite of services to bring your vision to life with precision and performance.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

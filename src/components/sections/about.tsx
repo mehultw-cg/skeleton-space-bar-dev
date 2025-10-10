@@ -11,16 +11,16 @@ export function About() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">About StellarDev Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">About Space Bar Labs</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Forged in the crucible of innovation, StellarDev Solutions is a constellation of passionate engineers, designers, and strategists dedicated to navigating the complexities of the digital cosmos.
+                Space Bar Labs is a collective of expert engineers, designers, and strategists obsessed with precision and performance. We exist to turn ambitious ideas into high-quality, impactful software.
               </p>
               <p>
-                Our mission is to empower businesses by transforming their visions into high-velocity, impactful software. We believe in building interstellar partnerships, fostering a culture of cosmic discovery, and delivering excellence in every line of code.
+                Our philosophy is built on a foundation of collaboration, meticulous execution, and a relentless drive for excellence. We don't just build products; we engineer possibilities.
               </p>
               <p>
-                From fledgling startups to galactic enterprises, we tailor our trajectory to meet the unique challenges and opportunities of each client, ensuring solutions that are not only technologically superior but also strategically aligned with their long-term cosmic ambitions.
+                From disruptive startups to established enterprises, we apply rigorous standards to every project, ensuring that our solutions are not only technologically superior but also perfectly aligned with our clients' strategic goals.
               </p>
             </div>
           </div>

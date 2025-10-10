@@ -6,6 +6,7 @@ import { TechStack } from '@/components/sections/tech-stack';
 import { Portfolio } from '@/components/sections/portfolio';
 import { About } from '@/components/sections/about';
 import { Contact } from '@/components/sections/contact';
+import { Pricing } from '@/components/sections/pricing';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <Services />
+        <Pricing />
         <TechStack />
         <Portfolio />
         <About />

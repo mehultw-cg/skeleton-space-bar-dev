@@ -4,35 +4,35 @@
 
 @layer base {
   :root {
-    --background: 228 9% 10%; /* Deep space blue */
+    --background: 210 20% 12%; /* Dark Slate Blue */
     --foreground: 210 40% 98%;
-    --card: 230 10% 15%; /* Darker card background */
+    --card: 204 15% 18%; /* Darker card background for depth */
     --card-foreground: 210 40% 98%;
-    --popover: 228 9% 10%;
+    --popover: 210 20% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 258 90% 68%; /* Nebula purple */
-    --primary-foreground: 210 40% 98%;
-    --primary-gradient-from: 258 90% 68%;
-    --primary-gradient-to: 198 90% 65%; /* Starlight cyan */
-    --secondary: 228 9% 17%;
+    --primary: 158 70% 50%; /* Vibrant Sea Green */
+    --primary-foreground: 210 20% 12%;
+    --primary-gradient-from: 158 80% 55%;
+    --primary-gradient-to: 168 70% 50%;
+    --secondary: 204 15% 22%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 228 9% 25%;
+    --muted: 204 15% 30%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 198 90% 65%; /* Starlight cyan */
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --accent-gradient-from: 198 90% 65%;
-    --accent-gradient-to: 180 90% 70%;
+    --accent: 168 70% 45%; /* Deeper Sea Green for accents */
+    --accent-foreground: 210 40% 98%;
+    --accent-gradient-from: 168 70% 45%;
+    --accent-gradient-to: 178 70% 50%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 228 9% 30%;
-    --input: 228 9% 17%;
-    --ring: 258 90% 75%;
+    --border: 204 15% 35%;
+    --input: 204 15% 22%;
+    --ring: 158 70% 55%;
     --radius: 0.75rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 158 70% 50%;
+    --chart-2: 168 60% 45%;
+    --chart-3: 178 50% 40%;
+    --chart-4: 188 45% 45%;
+    --chart-5: 198 55% 55%;
   }
 
   .light {
@@ -42,18 +42,18 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 258 85% 60%;
+    --primary: 158 60% 45%;
     --primary-foreground: 210 40% 98%;
-    --primary-gradient-from: 258 85% 60%;
-    --primary-gradient-to: 198 85% 55%;
+    --primary-gradient-from: 158 70% 50%;
+    --primary-gradient-to: 168 60% 45%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 198 85% 45%;
+    --accent: 168 65% 40%;
     --accent-foreground: 210 40% 98%;
-    --accent-gradient-from: 198 85% 45%;
-    --accent-gradient-to: 180 85% 55%;
+    --accent-gradient-from: 168 65% 40%;
+    --accent-gradient-to: 178 65% 50%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
@@ -82,6 +82,6 @@
 
 @layer components {
   .glass-card {
-    @apply bg-card/60 backdrop-blur-lg border border-white/10 shadow-lg;
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/20;
   }
 }
