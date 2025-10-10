@@ -5,6 +5,11 @@ import { ArrowRight } from 'lucide-react';
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
+       <div aria-hidden="true" className="animated-background">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+      </div>
       <div
         aria-hidden="true"
         className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20 dark:opacity-20"
