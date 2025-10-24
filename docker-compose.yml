@@ -1,0 +1,19 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3005:3000"
+    environment:
+      # Improve watcher reliability on Docker Desktop/WSL2
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      # Optional: help dev websockets on some setups
+      - WDS_SOCKET_HOST=127.0.0.1
+      - WDS_SOCKET_PORT=0
+    volumes:
+      - .:/app
+      # Mask container build/deps so bind mount doesn't overwrite
+      - /app/node_modules
+      - /app/.next
