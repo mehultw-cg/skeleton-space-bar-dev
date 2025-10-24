@@ -19,7 +19,7 @@ export function Hero() {
       </div>
       <div className="container relative text-center py-24 md:py-32">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter mb-4">
-          Precision. Performance.
+          Launching Tomorrow's
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
             {' '}
             Possibility.

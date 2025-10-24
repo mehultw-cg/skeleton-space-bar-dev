@@ -1,0 +1,21 @@
+# Dockerfile.dev
+FROM oven/bun:1.1-alpine
+
+ENV NODE_ENV=development
+WORKDIR /app
+
+# Install deps via bun for best dev perf
+COPY bun.lockb* package.json ./
+RUN if [ -f bun.lockb ]; then bun install; else bun install; fi
+
+# Copy the rest (types, config, etc.)
+COPY . .
+
+# Helpful for file watching inside Docker on some hosts
+ENV CHOKIDAR_USEPOLLING=true
+ENV WATCHPACK_POLLING=true
+
+EXPOSE 3000
+
+# Next 15 uses Turbopack by default; force webpack with `--turbopack=false` if needed
+CMD ["bun", "run", "dev"]
