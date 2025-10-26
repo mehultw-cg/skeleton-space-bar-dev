@@ -83,7 +83,7 @@ export function Services() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {serviceCategories.map((category, index) => (
-            <Card key={index} className="glass-card flex flex-col p-6 transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-1">
+            <Card key={index} className="glass-card flex flex-col p-6 transition-all duration-300 hover:shadow-primary/20 hover:-translate-y-1 z-10">
               <CardHeader className="flex flex-row items-center gap-4 pb-4">
                 {category.icon}
                 <CardTitle className="text-2xl font-headline">{category.category}</CardTitle>

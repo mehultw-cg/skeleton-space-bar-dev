@@ -1,14 +1,24 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Starfield from '../vfx/Starfield';
+import Image from 'next/image';
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-       <div aria-hidden="true" className="animated-background">
-          <div className="stars"></div>
-          <div className="stars2"></div>
-          <div className="stars3"></div>
+      {/* 3. Background Image Layer (z-index 5 or less, so Starfield (z-10) is above it) */}
+      {/* Using the Image component for better optimization and layout */}
+      <div className="absolute inset-0 -z-51 bg-gradient-to-br from-primary to-purple-400 dark:from-green-700"> 
+          <Image 
+              src="/Assets/horsehead.jpg" 
+              alt="Horsehead Nebula Background" 
+              layout="fill" 
+              objectFit="cover" 
+              quality={100}
+              // Optional: Add a subtle overlay for better text readability
+              className=""
+          />
       </div>
       <div
         aria-hidden="true"
