@@ -9,7 +9,7 @@ export function Hero() {
     <section className="relative overflow-hidden">
       {/* 3. Background Image Layer (z-index 5 or less, so Starfield (z-10) is above it) */}
       {/* Using the Image component for better optimization and layout */}
-      <div className="absolute inset-0 -z-51 bg-gradient-to-br from-primary to-purple-400 dark:from-green-700"> 
+      <div className="absolute inset-0 -z-51 bg-gradient-to-tr from-primary to-indigo-950/20 dark:from-gray-950/80"> 
           <Image 
               src="/Assets/horsehead.jpg" 
               alt="Horsehead Nebula Background" 
@@ -17,7 +17,7 @@ export function Hero() {
               objectFit="cover" 
               quality={100}
               // Optional: Add a subtle overlay for better text readability
-              className=""
+              className="opacity-70 dark:opacity-50"
           />
       </div>
       <div
