@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
-import Starfield from '@/components/vfx/Starfield';
 
 export const metadata: Metadata = {
   title: 'Space Bar Labs',
@@ -25,10 +24,6 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
-        <Starfield 
-        speedFactor={0.0075}
-        className="-z-50"
-      />
         <ThemeProvider defaultTheme="dark">
           {children}
           <Toaster />

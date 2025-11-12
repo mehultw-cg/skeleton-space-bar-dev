@@ -1,15 +1,19 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import Starfield from '../vfx/Starfield';
+import Starfield from '@/components/vfx/Starfield';
 import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden h-screen">
+              <Starfield 
+              speedFactor={0.0075}
+              className="-z-50"
+            />
       {/* 3. Background Image Layer (z-index 5 or less, so Starfield (z-10) is above it) */}
       {/* Using the Image component for better optimization and layout */}
-      <div className="absolute inset-0 -z-51 bg-gradient-to-tr from-primary to-indigo-950/20 dark:from-gray-950/80"> 
+      <div className="absolute inset-0 -z-51 bg-gradient-to-tr from-primary to-indigo-950/20 dark:from-gray-950/80 h-full"> 
           <Image 
               src="/Assets/horsehead.jpg" 
               alt="Horsehead Nebula Background" 
@@ -22,17 +26,17 @@ export function Hero() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20 dark:opacity-20"
+        className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20 dark:opacity-20 h-full"
       >
         <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-green-700"></div>
         <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-teal-600"></div>
       </div>
-      <div className="container relative text-center py-24 md:py-32">
+      <div className="container relative text-center py-24 md:py-32 h-full">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter mb-4">
-          Launching Tomorrow's
+          Shoot for the
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-gradient-from to-primary-gradient-to">
             {' '}
-            Possibility.
+            stars
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-8">
